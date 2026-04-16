@@ -71,7 +71,7 @@ export function AboutSection() {
                         {(t as any)(`languages.${lang.code}`)}
                       </span>
                       <LanguageBar filled={lang.bars} />
-                      <span className="font-mono text-[10px] text-text-dim w-12 text-right">
+                      <span className="font-mono text-xs text-text-dim w-12 text-right">
                         {(t as any)(`languageLevels.${lang.code}`)}
                       </span>
                     </li>

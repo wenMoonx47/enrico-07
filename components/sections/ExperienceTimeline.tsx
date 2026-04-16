@@ -112,7 +112,7 @@ export function ExperienceTimeline() {
                         <Badge
                           key={tag}
                           variant="secondary"
-                          className="font-mono text-[10px] bg-surface text-text-dim border-border hover:text-accent-from hover:border-accent-from/30 transition-colors duration-150"
+                          className="font-mono text-xs bg-surface text-text-dim border-border hover:text-accent-from hover:border-accent-from/30 transition-colors duration-150"
                         >
                           {tag}
                         </Badge>

@@ -51,7 +51,7 @@ function ChannelRow({
         <Icon size={13} className="text-accent-from" />
       </div>
       <div className="min-w-0">
-        <p className="font-mono text-[10px] text-text-dim uppercase tracking-widest">{label}</p>
+        <p className="font-mono text-xs text-text-dim uppercase tracking-widest">{label}</p>
         <p className="font-sans text-sm text-text-muted group-hover:text-text-primary transition-colors truncate">
           {value}
         </p>
@@ -154,7 +154,7 @@ export function ContactSection() {
                       aria-describedby={errors.name ? "name-error" : undefined}
                     />
                     {errors.name && (
-                      <p id="name-error" className="font-mono text-[11px] text-error" role="alert">
+                      <p id="name-error" className="font-mono text-xs text-error" role="alert">
                         {errors.name.message}
                       </p>
                     )}
@@ -178,7 +178,7 @@ export function ContactSection() {
                       aria-describedby={errors.email ? "email-error" : undefined}
                     />
                     {errors.email && (
-                      <p id="email-error" className="font-mono text-[11px] text-error" role="alert">
+                      <p id="email-error" className="font-mono text-xs text-error" role="alert">
                         {errors.email.message}
                       </p>
                     )}
@@ -203,7 +203,7 @@ export function ContactSection() {
                     aria-describedby={errors.subject ? "subject-error" : undefined}
                   />
                   {errors.subject && (
-                    <p id="subject-error" className="font-mono text-[11px] text-error" role="alert">
+                    <p id="subject-error" className="font-mono text-xs text-error" role="alert">
                       {errors.subject.message}
                     </p>
                   )}
@@ -228,7 +228,7 @@ export function ContactSection() {
                     aria-describedby={errors.message ? "message-error" : undefined}
                   />
                   {errors.message && (
-                    <p id="message-error" className="font-mono text-[11px] text-error" role="alert">
+                    <p id="message-error" className="font-mono text-xs text-error" role="alert">
                       {errors.message.message}
                     </p>
                   )}

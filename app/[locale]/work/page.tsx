@@ -64,7 +64,7 @@ export default async function WorkPage({ params }: Props) {
                   </p>
                   <div className="flex flex-wrap gap-1">
                     {cs.tags.slice(0, 4).map((tag) => (
-                      <Badge key={tag} variant="secondary" className="font-mono text-[10px] bg-surface-2 text-text-dim border-border">
+                      <Badge key={tag} variant="secondary" className="font-mono text-xs bg-surface-2 text-text-dim border-border">
                         {tag}
                       </Badge>
                     ))}

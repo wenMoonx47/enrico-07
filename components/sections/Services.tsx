@@ -65,7 +65,7 @@ export function ServicesSection() {
                         <Badge
                           key={tag}
                           variant="secondary"
-                          className="font-mono text-[10px] bg-surface-2 text-text-dim border-border hover:border-accent-from/30 hover:text-accent-from transition-colors duration-150"
+                          className="font-mono text-xs bg-surface-2 text-text-dim border-border hover:border-accent-from/30 hover:text-accent-from transition-colors duration-150"
                         >
                           {tag}
                         </Badge>

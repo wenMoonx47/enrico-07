@@ -28,7 +28,7 @@ export function TechStackSection() {
               <div className="rounded-lg border border-border bg-surface p-5">
                 {/* Category header */}
                 <div className="flex items-center gap-2 mb-4 pb-3 border-b border-border">
-                  <span className="font-mono text-[10px] text-accent-from">~/</span>
+                  <span className="font-mono text-xs text-accent-from">~/</span>
                   <h3 className="font-mono text-xs font-semibold text-text-primary uppercase tracking-widest">
                     {(t as any)(`categories.${category.id}`)}
                   </h3>
@@ -44,7 +44,7 @@ export function TechStackSection() {
                       viewport={{ once: true }}
                       transition={{ delay: ci * 0.06 + ii * 0.03, duration: 0.2 }}
                       whileHover={{ scale: 1.05 }}
-                      className="inline-flex items-center px-2 py-0.5 rounded border border-border bg-surface-2 font-mono text-[11px] text-text-muted
+                      className="inline-flex items-center px-2 py-0.5 rounded border border-border bg-surface-2 font-mono text-xs text-text-muted
                                  hover:border-accent-from/40 hover:text-accent-from hover:bg-accent-from/5
                                  transition-colors duration-150 cursor-default"
                     >
