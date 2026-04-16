@@ -1,0 +1,241 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "services": "Servicios",
+    "work": "Proyectos",
+    "experience": "Experiencia",
+    "stack": "Stack",
+    "contact": "Contacto",
+    "resume": "CV",
+    "uses": "Herramientas"
+  },
+  "hero": {
+    "prompt": "$ whoami",
+    "greeting": "Hola, soy",
+    "name": "Enrico Perania",
+    "titles": [
+      "Ingeniero de Software Senior",
+      "Arquitecto de Sistemas Backend",
+      "Especialista en Sistemas de IA",
+      "Tech Lead & Mentor"
+    ],
+    "subtitle": "Backend & AI Systems · 9+ años de experiencia · Lima, Perú",
+    "ctaContact": "contact.me()",
+    "ctaResume": "Ver Currículum",
+    "available": "Disponible para trabajo remoto",
+    "scrollHint": "Scroll para explorar"
+  },
+  "about": {
+    "prompt": "~/about $ cat bio.md",
+    "title": "Sobre mí",
+    "bio1": "Soy un Ingeniero de Software Senior con más de 9 años de experiencia construyendo sistemas backend escalables, plataformas SaaS y soluciones impulsadas por IA. He trabajado con equipos de alto rendimiento en España, Estados Unidos y México, liderando arquitecturas que procesan millones de operaciones diarias.",
+    "bio2": "Mi enfoque combina rigor técnico con visión de producto: diseño sistemas distribuidos robustos, integro pipelines de inteligencia artificial y mentorizo equipos para que alcancen su máximo potencial. Actualmente lidero el equipo de Backend & AI en Kueski, la fintech líder de México.",
+    "bio3": "Busco oportunidades remotas full-time o de consultoría freelance con empresas de tecnología en España, LATAM y Estados Unidos donde pueda aportar liderazgo técnico e innovación en sistemas de IA.",
+    "languagesTitle": "Idiomas",
+    "languages": {
+      "es": "Español",
+      "en": "Inglés",
+      "ja": "Japonés"
+    },
+    "languageLevels": {
+      "es": "Nativo",
+      "en": "Fluido",
+      "ja": "Fluido"
+    },
+    "locationTitle": "Ubicación",
+    "location": "Lima, Perú",
+    "timezoneTitle": "Zona horaria",
+    "timezone": "GMT-5 (América/Lima)",
+    "availableBadge": "Disponible para trabajo remoto",
+    "educationTitle": "Educación",
+    "education": "B.Sc. en Ciencias de la Computación",
+    "university": "Universidad Nacional de Ingeniería, Perú",
+    "graduationYear": "2016"
+  },
+  "services": {
+    "prompt": "~/services $ ls -la",
+    "title": "Servicios",
+    "subtitle": "Soluciones de ingeniería de software de nivel senior",
+    "items": {
+      "fullStack": {
+        "file": "full_stack.dev",
+        "title": "Desarrollo Full Stack",
+        "description": "Aplicaciones web modernas de punta a punta con React, Node.js, TypeScript y PostgreSQL. Arquitectura limpia, tests robustos y rendimiento optimizado.",
+        "tags": ["React", "Node.js", "TypeScript", "PostgreSQL", "GraphQL"]
+      },
+      "cloudArchitect": {
+        "file": "cloud_architect.ts",
+        "title": "Arquitectura Cloud",
+        "description": "Diseño e implementación de infraestructuras cloud escalables en AWS, GCP y Azure. Kubernetes, serverless y optimización de costos.",
+        "tags": ["AWS", "GCP", "Azure", "Kubernetes", "Terraform"]
+      },
+      "devops": {
+        "file": "devops_pipelines.yaml",
+        "title": "DevOps & CI/CD",
+        "description": "Pipelines de integración y despliegue continuo que automatizan desde el código hasta producción. Infraestructura como código con Terraform y Helm.",
+        "tags": ["GitHub Actions", "Terraform", "Argo CD", "Docker", "Helm"]
+      },
+      "ai": {
+        "file": "ai_integration.py",
+        "title": "Integración de IA",
+        "description": "Integración de modelos de lenguaje, pipelines RAG y bases de datos vectoriales en productos de software. De la prueba de concepto a producción.",
+        "tags": ["OpenAI", "RAG", "Vector DBs", "LangChain", "Python"]
+      },
+      "distributed": {
+        "file": "distributed_systems.go",
+        "title": "Sistemas Distribuidos",
+        "description": "Arquitecturas de microservicios, sistemas event-driven y comunicación asíncrona con Pub/Sub. Alta disponibilidad y tolerancia a fallos.",
+        "tags": ["Microservices", "Pub/Sub", "Event-driven", "Go", "Kafka"]
+      },
+      "leadership": {
+        "file": "tech_leadership.md",
+        "title": "Liderazgo Técnico",
+        "description": "Mentoría de equipos de ingeniería, definición de arquitecturas de referencia y facilitación del crecimiento técnico en organizaciones de producto.",
+        "tags": ["Mentoring", "Architecture", "Team Scaling", "Code Review"]
+      }
+    }
+  },
+  "caseStudies": {
+    "prompt": "~/work $ git log --oneline --graph",
+    "title": "Proyectos Destacados",
+    "subtitle": "Casos de estudio de impacto real",
+    "readMore": "Leer caso de estudio →",
+    "problem": "Problema",
+    "approach": "Enfoque",
+    "outcome": "Resultado",
+    "techUsed": "Tecnologías"
+  },
+  "experience": {
+    "prompt": "~/experience $ git log --all --format='%H %s'",
+    "title": "Experiencia",
+    "author": "Author: Enrico Perania",
+    "present": "Presente",
+    "achievements": "Logros"
+  },
+  "techStack": {
+    "prompt": "~/stack $ cat package.json | jq '.dependencies'",
+    "title": "Stack Tecnológico",
+    "subtitle": "Tecnologías con las que trabajo a diario",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "cloud": "Cloud",
+      "devops": "DevOps",
+      "cicd": "CI/CD",
+      "observability": "Observabilidad",
+      "ai": "IA & ML",
+      "testing": "Testing"
+    }
+  },
+  "contact": {
+    "prompt": "$ send message --to=enrico",
+    "title": "Contacto",
+    "subtitle": "¿Tienes un proyecto en mente? Hablemos.",
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "email": "Email",
+      "emailPlaceholder": "tu@email.com",
+      "subject": "Asunto",
+      "subjectPlaceholder": "¿En qué puedo ayudarte?",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntame sobre tu proyecto...",
+      "submit": "$ send --message",
+      "sending": "Enviando...",
+      "successTitle": "Mensaje enviado",
+      "successMessage": "Gracias por tu mensaje. Te responderé en menos de 24 horas.",
+      "errorTitle": "Error al enviar",
+      "errorMessage": "Hubo un problema al enviar tu mensaje. Por favor intenta de nuevo."
+    },
+    "errors": {
+      "nameRequired": "El nombre es requerido",
+      "nameMin": "El nombre debe tener al menos 2 caracteres",
+      "emailRequired": "El email es requerido",
+      "emailInvalid": "Ingresa un email válido",
+      "subjectRequired": "El asunto es requerido",
+      "subjectMin": "El asunto debe tener al menos 5 caracteres",
+      "messageRequired": "El mensaje es requerido",
+      "messageMin": "El mensaje debe tener al menos 20 caracteres"
+    },
+    "channels": {
+      "title": "Canales directos",
+      "email": "Email",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "twitter": "Twitter / X",
+      "whatsapp": "WhatsApp",
+      "location": "Ubicación"
+    }
+  },
+  "footer": {
+    "builtWith": "Construido con Next.js en Lima 🇵🇪",
+    "rights": "Todos los derechos reservados.",
+    "quickLinks": "Navegación rápida"
+  },
+  "statusBar": {
+    "online": "online",
+    "location": "Lima, Perú GMT-5",
+    "palette": "⌘K para menú"
+  },
+  "commandPalette": {
+    "placeholder": "Escribe un comando o busca...",
+    "noResults": "Sin resultados.",
+    "navigate": "Navegar",
+    "actions": "Acciones",
+    "downloadCV": "Descargar CV",
+    "openContact": "Abrir formulario de contacto",
+    "switchToEn": "Cambiar a English",
+    "switchToEs": "Cambiar a Español"
+  },
+  "uses": {
+    "prompt": "~/uses $ cat setup.md",
+    "title": "Mi Setup",
+    "subtitle": "Herramientas, hardware y software que uso a diario",
+    "categories": {
+      "hardware": "Hardware",
+      "editor": "Editor & Terminal",
+      "apps": "Apps & Herramientas",
+      "services": "Servicios & SaaS"
+    }
+  },
+  "resume": {
+    "prompt": "~/resume $ ls -la",
+    "title": "Currículum Vitae",
+    "subtitle": "Descarga mi CV en español o inglés",
+    "downloadEs": "Descargar CV en Español",
+    "downloadEn": "Descargar CV en Inglés",
+    "viewingEs": "cv-es · Google Drive",
+    "viewingEn": "cv-en · Google Drive",
+    "viewDriveEs": "Abrir CV en Español en Drive",
+    "viewDriveEn": "Abrir CV en Inglés en Drive"
+  },
+  "work": {
+    "prompt": "~/work $ cat case-study.md",
+    "backToWork": "← Volver a proyectos",
+    "backToHome": "← Inicio",
+    "problem": "El Problema",
+    "approach": "El Enfoque",
+    "outcome": "El Resultado",
+    "techStack": "Stack Tecnológico",
+    "keyMetrics": "Métricas Clave",
+    "timeline": "Línea de Tiempo"
+  },
+  "meta": {
+    "home": {
+      "title": "Enrico Perania — Ingeniero de Software Senior · Backend & AI Systems",
+      "description": "Lead Software Engineer especializado en sistemas backend, arquitectura cloud e integración de IA. Disponible para trabajo remoto con empresas en España, LATAM y EE.UU."
+    },
+    "work": {
+      "title": "Proyectos — Enrico Perania",
+      "description": "Casos de estudio detallados de proyectos en fintech, SaaS y sistemas distribuidos."
+    },
+    "uses": {
+      "title": "Mi Setup — Enrico Perania",
+      "description": "Herramientas, hardware y software que uso como Lead Software Engineer."
+    },
+    "resume": {
+      "title": "CV — Enrico Perania",
+      "description": "Currículum vitae de Enrico Perania, Lead Software Engineer con 9+ años de experiencia."
+    }
+  }
+}

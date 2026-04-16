@@ -1,0 +1,31 @@
+# Dependencies (installed fresh in Docker)
+node_modules
+
+# Build output (generated during Docker build)
+.next
+
+# Git history
+.git
+.gitignore
+
+# Environment files (injected at runtime)
+.env
+.env.*
+!.env.example
+
+# Dev / IDE files
+.vscode
+.idea
+*.local
+
+# Docs (not needed at runtime)
+README.md
+AGENTS.md
+CLAUDE.md
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Test output
+coverage
