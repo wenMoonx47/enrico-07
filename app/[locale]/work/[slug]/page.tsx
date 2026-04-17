@@ -82,7 +82,7 @@ export default async function CaseStudyPage({ params }: Props) {
                   alt={cs.company}
                   width={16}
                   height={16}
-                  className="object-contain invert brightness-90"
+                  className="object-contain"
                 />
               </div>
               <a

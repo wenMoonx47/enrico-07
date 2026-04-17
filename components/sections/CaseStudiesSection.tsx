@@ -79,9 +79,9 @@ export function CaseStudiesSection() {
     <section id="work" className="py-24" aria-labelledby="work-heading">
       <div className="section-container">
         <FadeUp>
-          <TerminalPrompt path="~/work" command="git log --oneline --graph" className="mb-2" />
-          <h2 id="work-heading" className="sr-only">{t("title")}</h2>
-          <p className="font-mono text-xs text-text-dim mb-10">{t("subtitle")}</p>
+          <TerminalPrompt path="~/work" command="git log --oneline --graph" className="mb-3" />
+          <h2 id="work-heading" className="font-mono text-2xl font-bold gradient-text mb-2">{t("title")}</h2>
+          <p className="font-sans text-sm text-text-muted mb-10">{t("subtitle")}</p>
         </FadeUp>
 
         {/* 2-column grid gives each card more room */}
@@ -100,7 +100,7 @@ export function CaseStudiesSection() {
                         alt={cs.company}
                         width={16}
                         height={16}
-                        className="object-contain invert brightness-90"
+                        className="object-contain"
                       />
                     </div>
                     <span className="font-mono text-xs text-text-dim">{cs.company}</span>

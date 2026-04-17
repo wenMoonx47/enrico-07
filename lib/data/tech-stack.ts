@@ -1,7 +1,5 @@
 export interface TechItem {
   name: string;
-  /** Lucide icon name or custom identifier */
-  icon?: string;
 }
 
 export interface TechCategory {
@@ -13,14 +11,13 @@ export const techStack: TechCategory[] = [
   {
     id: "frontend",
     items: [
-      { name: "React" },
+      { name: "React.js" },
       { name: "Angular" },
       { name: "TypeScript" },
-      { name: "Tailwind CSS" },
+      { name: "JavaScript (ES6+)" },
       { name: "HTML5" },
       { name: "CSS3" },
-      { name: "Next.js" },
-      { name: "Vite" },
+      { name: "Tailwind CSS" },
     ],
   },
   {
@@ -28,11 +25,10 @@ export const techStack: TechCategory[] = [
     items: [
       { name: "Node.js" },
       { name: "Python" },
-      { name: "Go" },
       { name: "Java" },
-      { name: "GraphQL" },
       { name: "REST APIs" },
-      { name: "gRPC" },
+      { name: "GraphQL" },
+      { name: "Microservices" },
     ],
   },
   {
@@ -44,6 +40,7 @@ export const techStack: TechCategory[] = [
       { name: "AWS RDS" },
       { name: "AWS S3" },
       { name: "AWS CloudFront" },
+      { name: "AWS CloudWatch" },
       { name: "GCP GKE" },
       { name: "GCP Cloud Run" },
       { name: "GCP Pub/Sub" },
@@ -87,8 +84,7 @@ export const techStack: TechCategory[] = [
       { name: "RAG Pipelines" },
       { name: "Vector DBs" },
       { name: "LangChain" },
-      { name: "Vertex AI" },
-      { name: "Hugging Face" },
+      { name: "LLMs" },
     ],
   },
   {
@@ -99,7 +95,7 @@ export const techStack: TechCategory[] = [
       { name: "Mocha" },
       { name: "Chai" },
       { name: "Postman" },
-      { name: "k6" },
+      { name: "Git" },
     ],
   },
 ];

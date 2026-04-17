@@ -4,6 +4,7 @@
     "services": "Services",
     "work": "Work",
     "experience": "Experience",
+    "education": "Education",
     "stack": "Stack",
     "contact": "Contact",
     "resume": "Resume",
@@ -19,7 +20,7 @@
       "AI Systems Specialist",
       "Tech Lead & Mentor"
     ],
-    "subtitle": "Backend & AI Systems · 9+ years of experience · Lima, Peru",
+    "subtitle": "Full-Stack · Backend · AI Systems · 9+ years · Lima, Peru",
     "ctaContact": "contact.me()",
     "ctaResume": "View Resume",
     "available": "Available for remote work",
@@ -28,9 +29,18 @@
   "about": {
     "prompt": "~/about $ cat bio.md",
     "title": "About me",
-    "bio1": "I'm a Senior Software Engineer with 9+ years of experience building scalable backend systems, SaaS platforms, and AI-powered solutions. I've worked with high-performance teams in Spain, the United States, and Mexico, leading architectures that process millions of daily operations.",
-    "bio2": "My approach combines technical rigor with product vision: I design robust distributed systems, integrate artificial intelligence pipelines, and mentor teams to reach their full potential. I currently lead the Backend & AI team at Kueski, Mexico's leading fintech.",
-    "bio3": "I'm looking for full-time remote or freelance consulting opportunities with tech companies in Spain, LATAM, and the United States where I can contribute technical leadership and AI systems innovation.",
+    "subtitle": "Product-focused Software Engineer · Full-Stack & Backend",
+    "stats": {
+      "yearsValue": "9+",
+      "yearsLabel": "Years of Experience",
+      "projectsValue": "50+",
+      "projectsLabel": "Projects Delivered",
+      "uptimeValue": "99.95%",
+      "uptimeLabel": "Uptime Achieved"
+    },
+    "bio1": "Product-focused Software Engineer with ~9 years of experience building scalable web applications and distributed systems across LATAM, the US, and Europe. Strong background in full-stack and backend development, cloud-native architectures, and DevOps automation.",
+    "bio2": "Throughout my career I've worked with high-performance remote teams at Holded, Factorial, Retool, and Kueski — delivering high-impact features in startup and scale-up environments. Proven ability to lead technical migrations, architect distributed systems, and integrate AI into production workflows.",
+    "bio3": "Currently leading Backend & AI Systems at Kueski, Mexico's leading fintech. Open to full-time remote or freelance consulting opportunities with tech companies in Spain, LATAM, and the US.",
     "languagesTitle": "Languages",
     "languages": {
       "es": "Spanish",
@@ -108,6 +118,7 @@
   "experience": {
     "prompt": "~/experience $ git log --all --format='%H %s'",
     "title": "Experience",
+    "subtitle": "Professional journey · 9+ years",
     "author": "Author: Enrico Perania",
     "present": "Present",
     "achievements": "Achievements"
@@ -164,6 +175,8 @@
       "github": "GitHub",
       "twitter": "Twitter / X",
       "whatsapp": "WhatsApp",
+      "phone": "Phone",
+      "address": "Address",
       "location": "Location"
     }
   },
@@ -219,6 +232,15 @@
     "techStack": "Tech Stack",
     "keyMetrics": "Key Metrics",
     "timeline": "Timeline"
+  },
+  "education": {
+    "title": "Education",
+    "subtitle": "Academic background",
+    "degree": "B.Sc. in Computer Science",
+    "university": "Universidad Nacional de Ingeniería",
+    "location": "Lima, Peru",
+    "graduated": "Graduated",
+    "year": "2016"
   },
   "meta": {
     "home": {

@@ -19,10 +19,10 @@ export function ExperienceTimeline() {
           <TerminalPrompt
             path="~/experience"
             command="git log --all --format='%H %s'"
-            className="mb-2"
+            className="mb-3"
           />
-          <h2 id="exp-heading" className="sr-only">{t("title")}</h2>
-          <p className="font-mono text-xs text-text-dim mb-12">{t("title")}</p>
+          <h2 id="exp-heading" className="font-mono text-2xl font-bold gradient-text mb-2">{t("title")}</h2>
+          <p className="font-sans text-sm text-text-muted mb-12">{t("subtitle")}</p>
         </FadeUp>
 
         <div className="relative">
@@ -75,7 +75,7 @@ export function ExperienceTimeline() {
                             alt={entry.company}
                             width={20}
                             height={20}
-                            className="object-contain invert brightness-90"
+                            className="object-contain"
                             style={{ maxWidth: 20, maxHeight: 20 }}
                           />
                         </div>

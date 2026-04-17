@@ -76,7 +76,7 @@ export function HeroSection() {
         className="absolute top-0 right-0 w-[600px] h-[600px] pointer-events-none"
         style={{
           background:
-            "radial-gradient(circle at 80% 20%, rgba(52,211,153,0.13) 0%, rgba(34,211,238,0.06) 35%, transparent 65%)",
+            "radial-gradient(circle at 80% 20%, rgba(5,150,105,0.09) 0%, rgba(8,145,178,0.04) 35%, transparent 65%)",
         }}
         aria-hidden="true"
       />

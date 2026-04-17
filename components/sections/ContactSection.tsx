@@ -12,7 +12,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { profile } from "@/lib/data/profile";
-import { Mail, MapPin, Send, Loader2 } from "lucide-react";
+import { Mail, MapPin, Phone, Send, Loader2 } from "lucide-react";
 import { GithubIcon, LinkedinIcon, TwitterXIcon, WhatsappIcon } from "@/components/icons/BrandIcons";
 import { cn } from "@/lib/utils";
 
@@ -105,9 +105,9 @@ export function ContactSection() {
     <section id="contact" className="py-24 bg-surface" aria-labelledby="contact-heading">
       <div className="section-container">
         <FadeUp>
-          <TerminalPrompt command="send message --to=enrico" className="mb-2" />
-          <h2 id="contact-heading" className="sr-only">{t("title")}</h2>
-          <p className="font-mono text-xs text-text-dim mb-10">{t("subtitle")}</p>
+          <TerminalPrompt command="send message --to=enrico" className="mb-3" />
+          <h2 id="contact-heading" className="font-mono text-2xl font-bold gradient-text mb-2">{t("title")}</h2>
+          <p className="font-sans text-sm text-text-muted mb-10">{t("subtitle")}</p>
         </FadeUp>
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
@@ -288,6 +288,12 @@ export function ContactSection() {
                 href={profile.social.twitter}
               />
               <ChannelRow
+                icon={Phone}
+                label={tc("phone")}
+                value={profile.phone}
+                href={`tel:${profile.phone}`}
+              />
+              <ChannelRow
                 icon={WhatsappIcon}
                 label={tc("whatsapp")}
                 value={profile.phone}
@@ -295,8 +301,8 @@ export function ContactSection() {
               />
               <ChannelRow
                 icon={MapPin}
-                label={tc("location")}
-                value={`${profile.address.city} (${profile.timezoneOffset})`}
+                label={tc("address")}
+                value={`${profile.address.street}, ${profile.address.district}, ${profile.address.city}`}
                 href="https://maps.google.com/?q=Lima+Peru"
               />
             </div>

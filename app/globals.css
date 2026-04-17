@@ -8,26 +8,26 @@
    TERMINAL DESIGN SYSTEM — CSS CUSTOM PROPERTIES
    ────────────────────────────────────────────────────────────────── */
 :root {
-  /* ── Core palette ── */
-  --background:  #0A0E0C;
-  --surface:     #0F1513;
-  --surface-2:   #161D1A;
-  --border:      #1F2A26;
+  /* ── Core palette — light theme ── */
+  --background:  #FFFFFF;
+  --surface:     #F5F9F7;
+  --surface-2:   #EAF3EE;
+  --border:      #C8DDD5;
 
   /* ── Text ── */
-  --text-primary: #E8F0EC;
-  --text-muted:   #8B9A93;
-  --text-dim:     #5A6B64;
+  --text-primary: #0F1E17;
+  --text-muted:   #3C5A4F;
+  --text-dim:     #6E8E85;
 
-  /* ── Accent — emerald→cyan ── */
-  --accent-from: #34D399; /* emerald-400 */
-  --accent-to:   #22D3EE; /* cyan-400    */
-  --accent:      #34D399;
+  /* ── Accent — emerald→cyan (deeper for light bg readability) ── */
+  --accent-from: #059669; /* emerald-600 */
+  --accent-to:   #0891B2; /* cyan-600    */
+  --accent:      #059669;
 
   /* ── Semantic ── */
-  --success: #34D399; /* emerald-400 */
-  --warning: #FBBF24; /* amber-400   */
-  --error:   #FB7185; /* rose-400    */
+  --success: #059669; /* emerald-600 */
+  --warning: #D97706; /* amber-600   */
+  --error:   #E11D48; /* rose-600    */
 
   /* ── Typography ── */
   --font-mono: "JetBrains Mono", "Cascadia Code", "Fira Code", monospace;
@@ -73,7 +73,7 @@
   --color-popover:              var(--surface-2);
   --color-popover-foreground:   var(--text-primary);
   --color-primary:              var(--accent-from);
-  --color-primary-foreground:   #0A0E0C;
+  --color-primary-foreground:   #FFFFFF;
   --color-secondary:            var(--surface-2);
   --color-secondary-foreground: var(--text-muted);
   /* "accent" in shadcn = subtle hover bg (not our terminal accent green) */
@@ -138,7 +138,7 @@ code, pre, kbd, samp {
 
 /* Selection */
 ::selection {
-  background: rgba(52, 211, 153, 0.25);
+  background: rgba(5, 150, 105, 0.18);
   color: var(--text-primary);
 }
 
@@ -185,22 +185,22 @@ code, pre, kbd, samp {
 
 /* Emerald glow variants */
 .glow-emerald {
-  box-shadow: 0 0 24px rgba(52, 211, 153, 0.18),
-              0 0 48px rgba(52, 211, 153, 0.06);
+  box-shadow: 0 0 24px rgba(5, 150, 105, 0.14),
+              0 0 48px rgba(5, 150, 105, 0.05);
 }
 .glow-emerald-sm {
-  box-shadow: 0 0 12px rgba(52, 211, 153, 0.12);
+  box-shadow: 0 0 12px rgba(5, 150, 105, 0.10);
 }
 .glow-emerald-border {
-  box-shadow: 0 0 0 1px rgba(52, 211, 153, 0.3),
-              0 0 16px rgba(52, 211, 153, 0.1);
+  box-shadow: 0 0 0 1px rgba(5, 150, 105, 0.25),
+              0 0 16px rgba(5, 150, 105, 0.08);
 }
 
 /* Dot-grid background pattern */
 .bg-dot-pattern {
   background-image: radial-gradient(
     circle,
-    rgba(52, 211, 153, 0.08) 1px,
+    rgba(5, 150, 105, 0.07) 1px,
     transparent 1px
   );
   background-size: 32px 32px;
@@ -216,8 +216,8 @@ code, pre, kbd, samp {
   height: 500px;
   background: radial-gradient(
     circle,
-    rgba(52, 211, 153, 0.12) 0%,
-    rgba(34, 211, 238, 0.06) 40%,
+    rgba(5, 150, 105, 0.09) 0%,
+    rgba(8, 145, 178, 0.04) 40%,
     transparent 70%
   );
   pointer-events: none;

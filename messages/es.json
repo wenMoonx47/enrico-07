@@ -4,6 +4,7 @@
     "services": "Servicios",
     "work": "Proyectos",
     "experience": "Experiencia",
+    "education": "Educación",
     "stack": "Stack",
     "contact": "Contacto",
     "resume": "CV",
@@ -19,7 +20,7 @@
       "Especialista en Sistemas de IA",
       "Tech Lead & Mentor"
     ],
-    "subtitle": "Backend & AI Systems · 9+ años de experiencia · Lima, Perú",
+    "subtitle": "Full-Stack · Backend · AI Systems · 9+ años · Lima, Perú",
     "ctaContact": "contact.me()",
     "ctaResume": "Ver Currículum",
     "available": "Disponible para trabajo remoto",
@@ -28,9 +29,18 @@
   "about": {
     "prompt": "~/about $ cat bio.md",
     "title": "Sobre mí",
-    "bio1": "Soy un Ingeniero de Software Senior con más de 9 años de experiencia construyendo sistemas backend escalables, plataformas SaaS y soluciones impulsadas por IA. He trabajado con equipos de alto rendimiento en España, Estados Unidos y México, liderando arquitecturas que procesan millones de operaciones diarias.",
-    "bio2": "Mi enfoque combina rigor técnico con visión de producto: diseño sistemas distribuidos robustos, integro pipelines de inteligencia artificial y mentorizo equipos para que alcancen su máximo potencial. Actualmente lidero el equipo de Backend & AI en Kueski, la fintech líder de México.",
-    "bio3": "Busco oportunidades remotas full-time o de consultoría freelance con empresas de tecnología en España, LATAM y Estados Unidos donde pueda aportar liderazgo técnico e innovación en sistemas de IA.",
+    "subtitle": "Ingeniero de Software orientado al producto · Full-Stack & Backend",
+    "stats": {
+      "yearsValue": "9+",
+      "yearsLabel": "Años de Experiencia",
+      "projectsValue": "50+",
+      "projectsLabel": "Proyectos Entregados",
+      "uptimeValue": "99.95%",
+      "uptimeLabel": "Uptime Alcanzado"
+    },
+    "bio1": "Ingeniero de Software orientado al producto con ~9 años de experiencia construyendo aplicaciones web escalables y sistemas distribuidos en LATAM, EE.UU. y Europa. Sólida experiencia en desarrollo full-stack y backend, arquitecturas cloud-native y automatización DevOps.",
+    "bio2": "A lo largo de mi carrera he trabajado con equipos remotos de alto rendimiento en Holded, Factorial, Retool y Kueski, entregando funcionalidades de alto impacto en entornos startup y scale-up. Capacidad demostrada para liderar migraciones técnicas, diseñar sistemas distribuidos e integrar IA en flujos de producción.",
+    "bio3": "Actualmente lidero Backend & AI Systems en Kueski, la fintech líder de México. Abierto a oportunidades remotas full-time o de consultoría freelance con empresas tecnológicas en España, LATAM y EE.UU.",
     "languagesTitle": "Idiomas",
     "languages": {
       "es": "Español",
@@ -108,6 +118,7 @@
   "experience": {
     "prompt": "~/experience $ git log --all --format='%H %s'",
     "title": "Experiencia",
+    "subtitle": "Trayectoria profesional · 9+ años",
     "author": "Author: Enrico Perania",
     "present": "Presente",
     "achievements": "Logros"
@@ -164,6 +175,8 @@
       "github": "GitHub",
       "twitter": "Twitter / X",
       "whatsapp": "WhatsApp",
+      "phone": "Teléfono",
+      "address": "Dirección",
       "location": "Ubicación"
     }
   },
@@ -219,6 +232,15 @@
     "techStack": "Stack Tecnológico",
     "keyMetrics": "Métricas Clave",
     "timeline": "Línea de Tiempo"
+  },
+  "education": {
+    "title": "Educación",
+    "subtitle": "Formación académica",
+    "degree": "B.Sc. en Ciencias de la Computación",
+    "university": "Universidad Nacional de Ingeniería",
+    "location": "Lima, Perú",
+    "graduated": "Graduado",
+    "year": "2016"
   },
   "meta": {
     "home": {

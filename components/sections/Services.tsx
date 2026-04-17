@@ -21,9 +21,9 @@ export function ServicesSection() {
     <section id="services" className="py-24 bg-surface" aria-labelledby="services-heading">
       <div className="section-container">
         <FadeUp>
-          <TerminalPrompt path="~/services" command="ls -la" className="mb-2" />
-          <h2 id="services-heading" className="sr-only">{t("title")}</h2>
-          <p className="font-mono text-xs text-text-dim mb-10">{t("subtitle")}</p>
+          <TerminalPrompt path="~/services" command="ls -la" className="mb-3" />
+          <h2 id="services-heading" className="font-mono text-2xl font-bold gradient-text mb-2">{t("title")}</h2>
+          <p className="font-sans text-sm text-text-muted mb-10">{t("subtitle")}</p>
         </FadeUp>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

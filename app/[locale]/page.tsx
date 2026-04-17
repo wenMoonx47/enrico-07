@@ -5,6 +5,7 @@ import { AboutSection } from "@/components/sections/About";
 import { ServicesSection } from "@/components/sections/Services";
 import { CaseStudiesSection } from "@/components/sections/CaseStudiesSection";
 import { ExperienceTimeline } from "@/components/sections/ExperienceTimeline";
+import { EducationSection } from "@/components/sections/EducationSection";
 import { TechStackSection } from "@/components/sections/TechStackSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { Footer } from "@/components/Footer";
@@ -103,6 +104,7 @@ export default async function HomePage({ params }: HomeProps) {
       <ServicesSection />
       <CaseStudiesSection />
       <ExperienceTimeline />
+      <EducationSection />
       <TechStackSection />
       <ContactSection />
       <Footer />

@@ -16,10 +16,10 @@ export function TechStackSection() {
           <TerminalPrompt
             path="~/stack"
             command="cat package.json | jq '.dependencies'"
-            className="mb-2"
+            className="mb-3"
           />
-          <h2 id="stack-heading" className="sr-only">{t("title")}</h2>
-          <p className="font-mono text-xs text-text-dim mb-10">{t("subtitle")}</p>
+          <h2 id="stack-heading" className="font-mono text-2xl font-bold gradient-text mb-2">{t("title")}</h2>
+          <p className="font-sans text-sm text-text-muted mb-10">{t("subtitle")}</p>
         </FadeUp>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -28,14 +28,14 @@ export function TechStackSection() {
               <div className="rounded-lg border border-border bg-surface p-5">
                 {/* Category header */}
                 <div className="flex items-center gap-2 mb-4 pb-3 border-b border-border">
-                  <span className="font-mono text-xs text-accent-from">~/</span>
-                  <h3 className="font-mono text-xs font-semibold text-text-primary uppercase tracking-widest">
+                  <span className="font-mono text-sm text-accent-from">~/</span>
+                  <h3 className="font-mono text-sm font-semibold text-text-primary uppercase tracking-widest">
                     {(t as any)(`categories.${category.id}`)}
                   </h3>
                 </div>
 
                 {/* Tech pills */}
-                <div className="flex flex-wrap gap-1.5">
+                <div className="flex flex-wrap gap-2">
                   {category.items.map((item, ii) => (
                     <motion.span
                       key={item.name}
@@ -44,7 +44,7 @@ export function TechStackSection() {
                       viewport={{ once: true }}
                       transition={{ delay: ci * 0.06 + ii * 0.03, duration: 0.2 }}
                       whileHover={{ scale: 1.05 }}
-                      className="inline-flex items-center px-2 py-0.5 rounded border border-border bg-surface-2 font-mono text-xs text-text-muted
+                      className="inline-flex items-center px-2.5 py-1 rounded border border-border bg-surface-2 font-mono text-xs text-text-muted
                                  hover:border-accent-from/40 hover:text-accent-from hover:bg-accent-from/5
                                  transition-colors duration-150 cursor-default"
                     >

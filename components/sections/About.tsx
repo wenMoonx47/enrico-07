@@ -5,7 +5,7 @@ import { FadeUp } from "@/components/motion/FadeUp";
 import { TerminalPrompt } from "@/components/terminal/TerminalPrompt";
 import { Badge } from "@/components/ui/badge";
 import { profile } from "@/lib/data/profile";
-import { MapPin, Clock, GraduationCap, Wifi } from "lucide-react";
+import { MapPin, Clock, Wifi } from "lucide-react";
 
 /** Filled / empty bar characters for language proficiency */
 function LanguageBar({ filled, total = 5 }: { filled: number; total?: number }) {
@@ -28,7 +28,27 @@ export function AboutSection() {
       <div className="section-container">
         {/* Section header */}
         <FadeUp>
-          <TerminalPrompt path="~/about" command="cat bio.md" className="mb-8" />
+          <TerminalPrompt path="~/about" command="cat bio.md" className="mb-3" />
+          <h2 id="about-heading" className="font-mono text-2xl font-bold gradient-text mb-2">
+            {t("title")}
+          </h2>
+          <p className="font-sans text-sm text-text-muted mb-8">{t("subtitle")}</p>
+        </FadeUp>
+
+        {/* Stats row */}
+        <FadeUp delay={0.05}>
+          <div className="grid grid-cols-3 gap-4 mb-10">
+            {([
+              { value: t("stats.yearsValue"),    label: t("stats.yearsLabel")    },
+              { value: t("stats.projectsValue"), label: t("stats.projectsLabel") },
+              { value: t("stats.uptimeValue"),   label: t("stats.uptimeLabel")   },
+            ] as const).map(({ value, label }) => (
+              <div key={label} className="rounded-lg border border-border bg-surface p-4 text-center">
+                <p className="font-mono text-3xl font-bold gradient-text">{value}</p>
+                <p className="font-sans text-xs text-text-muted mt-1.5 leading-snug">{label}</p>
+              </div>
+            ))}
+          </div>
         </FadeUp>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
@@ -58,10 +78,7 @@ export function AboutSection() {
 
               {/* Languages */}
               <div>
-                <h3
-                  id="about-heading"
-                  className="font-mono text-xs uppercase tracking-widest text-text-dim mb-3"
-                >
+                <h3 className="font-mono text-xs uppercase tracking-widest text-text-dim mb-3">
                   {t("languagesTitle")}
                 </h3>
                 <ul className="space-y-2.5" aria-label={t("languagesTitle")}>
@@ -95,20 +112,6 @@ export function AboutSection() {
                 </div>
               </div>
 
-              {/* Education */}
-              <div>
-                <h3 className="font-mono text-xs uppercase tracking-widest text-text-dim mb-2">
-                  {t("educationTitle")}
-                </h3>
-                <div className="flex items-start gap-2">
-                  <GraduationCap size={13} className="text-accent-from mt-0.5 shrink-0" />
-                  <div>
-                    <p className="font-sans text-sm text-text-primary">{t("education")}</p>
-                    <p className="font-mono text-xs text-text-muted">{t("university")}</p>
-                    <p className="font-mono text-xs text-text-dim">{t("graduationYear")}</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </FadeUp>
         </div>

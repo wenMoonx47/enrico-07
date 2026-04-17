@@ -309,6 +309,98 @@ export const caseStudies: CaseStudy[] = [
     tags: ["Node.js", "Ruby on Rails", "Docker", "AWS ECS", "PostgreSQL", "Redis", "RabbitMQ", "GraphQL", "GitLab CI"],
     featured: true,
   },
+  {
+    slug: "holded-frontend-erp",
+    company: "Holded",
+    companyUrl: "https://www.holded.com",
+    logoPath: "/images/companies/holded.svg",
+    productImagePath: "/images/products/holded-1.webp",
+    coverImagePath: "/images/case-studies/holded-cover.webp",
+    screenshots: [
+      { path: "/images/products/holded-1.webp", label: { es: "Dashboard ERP", en: "ERP Dashboard" } },
+      { path: "/images/products/holded-2.png",  label: { es: "Facturación",   en: "Invoicing"     } },
+      { path: "/images/products/holded-3.png",  label: { es: "Contabilidad",  en: "Accounting"    } },
+    ],
+    title: {
+      es: "Frontend Moderno para ERP Cloud en Holded",
+      en: "Modern Frontend for Cloud ERP at Holded",
+    },
+    subtitle: {
+      es: "Cómo migré el dashboard de jQuery a React y escalé la plataforma a 10K+ PYMEs",
+      en: "How I migrated the dashboard from jQuery to React and scaled the platform to 10K+ SMBs",
+    },
+    period: "Jul 2016 – Dec 2018",
+    role: {
+      es: "Ingeniero Frontend Junior",
+      en: "Junior Frontend Engineer",
+    },
+    problem: {
+      es: "El dashboard de Holded estaba construido con jQuery y templates Handlebars, lo que causaba tiempos de carga de 4+ segundos y una experiencia de usuario inconsistente que frenaba la adopción.",
+      en: "Holded's dashboard was built with jQuery and Handlebars templates, causing 4+ second load times and an inconsistent user experience that was slowing adoption.",
+    },
+    approach: {
+      es: "Migración incremental de módulos de jQuery a React con Redux, priorizando los módulos de mayor uso (facturación y contabilidad) para impacto inmediato en retención.",
+      en: "Incremental migration of modules from jQuery to React with Redux, prioritizing highest-usage modules (invoicing and accounting) for immediate impact on retention.",
+    },
+    outcome: {
+      es: "Reducción del 30% en tiempos de carga. Bundle reducido en 40KB. Engagement de usuarios mejorado un 25%. Base para escalar a 10K+ clientes.",
+      en: "30% reduction in load times. Bundle reduced by 40KB. User engagement improved 25%. Foundation to scale to 10K+ customers.",
+    },
+    context: {
+      es: "Holded es un ERP cloud para PYMEs que integra facturación, contabilidad, proyectos y CRM. Durante mi tiempo allí, la plataforma estaba en fase de crecimiento acelerado y el frontend legacy se había convertido en el principal cuello de botella para la adopción y retención de usuarios.",
+      en: "Holded is a cloud ERP for SMBs integrating invoicing, accounting, projects, and CRM. During my time there, the platform was in rapid growth phase and the legacy frontend had become the main bottleneck for user adoption and retention.",
+    },
+    challenges: {
+      es: [
+        "Dashboard monolítico en jQuery con tiempos de carga de 4+ segundos",
+        "Sin sistema de componentes — cada módulo replicaba lógica de UI",
+        "4 idiomas europeos a soportar (ES, EN, FR, DE) sin i18n estructurado",
+        "Migración sin interrumpir el servicio a clientes activos",
+        "Equipo pequeño de 3 frontends para un producto con 20+ módulos",
+      ],
+      en: [
+        "Monolithic jQuery dashboard with 4+ second load times",
+        "No component system — each module replicated UI logic",
+        "4 European languages to support (ES, EN, FR, DE) without structured i18n",
+        "Migration without interrupting active customers",
+        "Small team of 3 frontend engineers for a product with 20+ modules",
+      ],
+    },
+    solution: {
+      es: "Propuse e implementé una migración modular: cada página nueva se construía en React mientras las antiguas permanecían funcionales en jQuery. Construí un sistema de componentes compartidos con Storybook que aceleró el desarrollo de los módulos siguientes. Implementé react-i18next para gestionar las 4 lenguas de forma centralizada.",
+      en: "I proposed and implemented a modular migration: each new page was built in React while old ones remained functional in jQuery. I built a shared component system with Storybook that accelerated development of subsequent modules. Implemented react-i18next to manage all 4 languages centrally.",
+    },
+    architecture: {
+      es: "Stack frontend: React 16 con Redux para estado global, React Router para navegación SPA, Webpack para bundling optimizado, Storybook para documentación de componentes, Jest + Enzyme para testing, y react-i18next para internacionalización. Integración con APIs REST del backend Rails.",
+      en: "Frontend stack: React 16 with Redux for global state, React Router for SPA navigation, Webpack for optimized bundling, Storybook for component documentation, Jest + Enzyme for testing, and react-i18next for internationalization. Integration with Rails backend REST APIs.",
+    },
+    results: {
+      es: [
+        "Reducción del 35% en tiempos de carga del dashboard principal",
+        "Bundle reducido en 40KB tras migración y tree-shaking",
+        "Sistema de componentes con 60+ componentes reutilizables en Storybook",
+        "i18n implementado para 4 idiomas (ES, EN, FR, DE) sin overhead de mantenimiento",
+        "Retención de usuarios mejorada un 20% (métrica de producto)",
+        "Base técnica que permitió escalar a 10K+ clientes en los 12 meses siguientes",
+      ],
+      en: [
+        "35% reduction in main dashboard load times",
+        "Bundle reduced by 40KB after migration and tree-shaking",
+        "Component system with 60+ reusable components in Storybook",
+        "i18n implemented for 4 languages (ES, EN, FR, DE) without maintenance overhead",
+        "User retention improved 20% (product metric)",
+        "Technical foundation that enabled scaling to 10K+ customers in the following 12 months",
+      ],
+    },
+    metrics: [
+      { label: { es: "Reducción tiempo carga",   en: "Load time reduction" },  value: "30", unit: "%" },
+      { label: { es: "Engagement usuarios +",    en: "User engagement +" },    value: "25", unit: "%" },
+      { label: { es: "Reducción bundle",          en: "Bundle reduction" },     value: "40", unit: "KB" },
+      { label: { es: "Entrega funcionalidades +", en: "Feature delivery +" },   value: "20", unit: "%" },
+    ],
+    tags: ["React", "Redux", "TypeScript", "JavaScript", "Storybook", "Jest", "Webpack", "CSS Modules", "i18n", "Ruby on Rails"],
+    featured: true,
+  },
 ];
 
 export function getCaseStudyBySlug(slug: string): CaseStudy | undefined {
